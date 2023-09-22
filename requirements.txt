@@ -1,4 +1,4 @@
 seaborn==0.12.1
-pandas @ file:///D:/bld/pandas_1669134777944/work
-matplotlib @ file:///D:/bld/matplotlib-suite_1667505124848/work
+pandas 
+matplotlib 
 matplotlib-inline==0.1.6
