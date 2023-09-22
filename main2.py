@@ -1,4 +1,4 @@
-import zipfile
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,18 +7,9 @@ import streamlit as st
 sns.set(style='dark')
 
 # Load cleaned data
-# Nama file ZIP yang berisi file CSV
-nama_file_zip = 'ups.zip'
 
-# Ekstrak file ZIP
-with zipfile.ZipFile(nama_file_zip, 'r') as zipf:
-    # Baca semua file dalam ZIP (dalam hal ini, hanya ada satu file CSV)
-    zipf.extractall()
 
-# Nama file CSV yang telah diekstrak
-data_combined = 'data_combined.csv'
-
-com_df = pd.read_csv(data_combined)
+com_df = pd.read_csv('data_combined.csv')
 
 datetime_columns = ["datetime"]
 com_df.sort_values(by="datetime", inplace=True)
