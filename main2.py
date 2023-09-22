@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-
+pd.set_option('mode.use_inf_as_null', True)
 
 sns.set(style='dark')
 
